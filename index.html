@@ -4,37 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wk1-JS-Practice</title>
+  <title>Week 1 Toy Problems</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <div class="container">
-    <h2>Student Grade Generator</h2>
-    <label for="marks">Enter marks</label>
-    <input type="number" id="marks" placeholder="Enter marks here" /> <br>
-    <button id="gradeButton">Get Grade</button>
-    <p id="gradeResult"></p>
+    <h1>Welcome to Week 1 Toy Problems</h1>
+    <p>Choose a challenge to solve:</p>
+
+    <div class="challenges">
+      <a href="grade-generator.html" class="challenge-link">
+        <div class="challenge-card">
+          <h2>Student Grade Generator</h2>
+          <p>Generate student grades based on input marks.</p>
+        </div>
+      </a>
+
+      <a href="speed-detector.html" class="challenge-link">
+        <div class="challenge-card">
+          <h2>Speed Detector</h2>
+          <p>Check car speed and calculate demerit points.</p>
+        </div>
+      </a>
+
+      <a href="salary-calculator.html" class="challenge-link">
+        <div class="challenge-card">
+          <h2>Net Salary Calculator</h2>
+          <p>Calculate net salary with deductions and taxes.</p>
+        </div>
+      </a>
+    </div>
   </div>
-  <div class="container">
-    <h2>Speed Detector</h2>
-    <input type="number" id="speed" placeholder="Enter car speed (km/h)"> <br>
-    <button id="speedButton">Check Speed</button>
-    <p id="speedResult"></p>
-  </div>
-  
-  <div class="container">
-    <h2>Net Salary Calculator</h2>
-    <input type="number" id="basicSalary" placeholder="Basic Salary (KES)"> <br>
-    <input type="number" id="benefits" min="0" placeholder="Benefits (KES)"><br>
-    <button id="salaryButton">Calculate</button>
-    <div id="payeeResult"></div>
-    <div id="shifResult"></div>
-    <div id="nssfResult"></div>
-    <div id="houseLevyResult"></div>
-    <div id="netSalary"></div>
-  </div>
-  <script src="./script.js"></script>
 </body>
 
 </html>

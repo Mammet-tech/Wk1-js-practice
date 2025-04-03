@@ -1,12 +1,18 @@
-// Event Listeners
+// Event listeners
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("gradeButton")
-    .addEventListener("click", generateGrades);
-  document.getElementById("speedButton").addEventListener("click", detectSpeed);
-  document
-    .getElementById("salaryButton")
-    .addEventListener("click", calculateSalary);
+  let gradeButton = document.getElementById("gradeButton");
+  let speedButton = document.getElementById("speedButton");
+  let salaryButton = document.getElementById("salaryButton");
+
+  if (gradeButton) {
+    gradeButton.addEventListener("click", generateGrades);
+  }
+  if (speedButton) {
+    speedButton.addEventListener("click", detectSpeed);
+  }
+  if (salaryButton) {
+    salaryButton.addEventListener("click", calculateSalary);
+  }
 });
 
 // Grade Generator
@@ -35,7 +41,7 @@ function generateGrades() {
   result.style.color = "green";
 }
 
-// Speed detector
+// Speed Detector
 function detectSpeed() {
   let speed = document.getElementById("speed").value;
   let result = document.getElementById("speedResult");
