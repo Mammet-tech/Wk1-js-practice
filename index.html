@@ -12,23 +12,27 @@
   <div class="container">
     <h2>Student Grade Generator</h2>
     <label for="marks">Enter marks</label>
-    <input type="number" min="0" max="100" id="marks" placeholder="Enter marks here" /> <br>
-    <button id="btn">Get Grade</button>
-    <p id="result"></p>
+    <input type="number" id="marks" placeholder="Enter marks here" /> <br>
+    <button id="gradeButton">Get Grade</button>
+    <p id="gradeResult"></p>
   </div>
   <div class="container">
     <h2>Speed Detector</h2>
-    <input type="number" min="0" id="speed" placeholder="Enter car speed (km/h)"> <br>
-    <button>Check Speed</button>
+    <input type="number" id="speed" placeholder="Enter car speed (km/h)"> <br>
+    <button id="speedButton">Check Speed</button>
     <p id="speedResult"></p>
   </div>
   
   <div class="container">
     <h2>Net Salary Calculator</h2>
-    <input type="number" id="basicSalary" min="0" placeholder="Basic Salary (KES)"> <br>
+    <input type="number" id="basicSalary" placeholder="Basic Salary (KES)"> <br>
     <input type="number" id="benefits" min="0" placeholder="Benefits (KES)"><br>
-    <button>Calculate</button>
-    <p id="salaryResult"></p>
+    <button id="salaryButton">Calculate</button>
+    <div id="payeeResult"></div>
+    <div id="shifResult"></div>
+    <div id="nssfResult"></div>
+    <div id="houseLevyResult"></div>
+    <div id="netSalary"></div>
   </div>
   <script src="./script.js"></script>
 </body>
